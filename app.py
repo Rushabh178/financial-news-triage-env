@@ -7,6 +7,11 @@ app = FastAPI()
 ENV = FinancialNewsEnvironment()
 
 
+@app.get("/")
+def root():
+    return {"status": "running"}
+
+
 @app.post("/reset", response_model=Observation)
 def reset() -> Observation:
     return ENV.reset()

@@ -12,10 +12,12 @@ MODEL_NAME = os.getenv("MODEL_NAME")
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Client initialized for OpenEnv spec compliance; baseline remains deterministic.
-client = OpenAI(
-    base_url=API_BASE_URL,
-    api_key=HF_TOKEN
-)
+client = None
+if API_BASE_URL and HF_TOKEN:
+    client = OpenAI(
+        base_url=API_BASE_URL,
+        api_key=HF_TOKEN
+    )
 
 
 def run() -> None:

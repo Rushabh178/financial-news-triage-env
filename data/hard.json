@@ -1,0 +1,182 @@
+[
+	{
+		"headline": "Tesla posts record quarterly deliveries but cuts vehicle prices again as battery input costs rebound and European subsidy rules tighten",
+		"truth": {
+			"relevance": "high",
+			"sector": "consumer",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "JPMorgan expands buyback plan after stronger trading revenue, while regulators seek higher capital buffers for systemically important banks",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Saudi-led supply cuts lift crude benchmarks, but Asian refinery margins narrow as end-demand for diesel weakens",
+		"truth": {
+			"relevance": "high",
+			"sector": "energy",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Pfizer beats quarterly profit estimates on cost controls, yet US drug-pricing negotiations widen to additional therapies next year",
+		"truth": {
+			"relevance": "high",
+			"sector": "healthcare",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Airbus raises annual delivery guidance as engine shortages ease, though a stronger euro trims export competitiveness against US rivals",
+		"truth": {
+			"relevance": "medium",
+			"sector": "industrials",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Procter & Gamble reports resilient premium product demand, but private-label share gains accelerate in key European markets",
+		"truth": {
+			"relevance": "medium",
+			"sector": "consumer",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US office landlords gain on expectations of lower policy rates, while regional banks signal stricter refinancing terms for maturing debt",
+		"truth": {
+			"relevance": "high",
+			"sector": "real_estate",
+			"urgency": "high",
+			"action": "sell"
+		}
+	},
+	{
+		"headline": "BHP says copper output rose on higher ore grades, but labor talks in Chile raise risk of temporary disruptions",
+		"truth": {
+			"relevance": "high",
+			"sector": "materials",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US utilities rally on falling Treasury yields, yet wildfire liability reforms stall in a key state legislature",
+		"truth": {
+			"relevance": "high",
+			"sector": "utilities",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "European telecom operators secure spectrum renewals at lower upfront fees, but wholesale price caps squeeze long-term return assumptions",
+		"truth": {
+			"relevance": "medium",
+			"sector": "telecom",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US core inflation cools unexpectedly and Treasury yields drop, while services wage growth remains above levels consistent with target inflation",
+		"truth": {
+			"relevance": "high",
+			"sector": "macro",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "A major sovereign wealth fund increases allocations to private credit despite rising default warnings from rating agencies",
+		"truth": {
+			"relevance": "low",
+			"sector": "other",
+			"urgency": "low",
+			"action": "ignore"
+		}
+	},
+	{
+		"headline": "Microsoft signs new government cloud contracts, but antitrust authorities in Europe open a fresh probe into bundling practices",
+		"truth": {
+			"relevance": "high",
+			"sector": "technology",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Morgan Stanley lifts investment banking outlook as deal pipelines reopen, yet warns wealth-management net new assets slowed in Asia",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "European natural gas inventories remain high after mild weather, but LNG shipping disruptions in a key canal raise winter supply concerns",
+		"truth": {
+			"relevance": "high",
+			"sector": "energy",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Novo Nordisk reports stronger obesity drug demand, while health insurers push for tighter reimbursement criteria in multiple markets",
+		"truth": {
+			"relevance": "high",
+			"sector": "healthcare",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US freight rail volumes recover with industrial output, but new labor agreements lock in higher operating costs through 2027",
+		"truth": {
+			"relevance": "medium",
+			"sector": "industrials",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Luxury goods sales beat expectations in the US, though demand in China softens as currency volatility erodes tourist spending",
+		"truth": {
+			"relevance": "medium",
+			"sector": "consumer",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US housing starts rebound after mortgage-rate pullback, but builders cite permit delays and higher insurance costs across coastal states",
+		"truth": {
+			"relevance": "high",
+			"sector": "real_estate",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Aluminum prices climb on power curbs at smelters, while downstream packaging demand contracts amid weaker consumer volumes",
+		"truth": {
+			"relevance": "high",
+			"sector": "materials",
+			"urgency": "high",
+			"action": "sell"
+		}
+	}
+]

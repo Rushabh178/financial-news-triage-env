@@ -1,0 +1,15 @@
+name: financial-news-triage
+version: 1.0.0
+description: Deterministic financial news triage environment where agents classify market relevance, sector impact, urgency, and action from realistic financial headlines.
+entrypoint: app.py
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+metadata:
+  domain: finance
+  environment_type: deterministic
+  interaction_mode: step_based
+  reward_range: [0.0, 1.0]

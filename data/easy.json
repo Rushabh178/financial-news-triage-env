@@ -1,0 +1,182 @@
+[
+	{
+		"headline": "Apple shares rise after quarterly revenue tops Wall Street estimates on stronger iPhone demand",
+		"truth": {
+			"relevance": "high",
+			"sector": "technology",
+			"urgency": "high",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "JPMorgan profit jumps as investment banking fees rebound and credit costs stay contained",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "high",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Exxon Mobil says Gulf of Mexico output restored faster than expected after storm disruptions",
+		"truth": {
+			"relevance": "medium",
+			"sector": "energy",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "UnitedHealth reaffirms annual forecast as medical cost trends track prior guidance",
+		"truth": {
+			"relevance": "medium",
+			"sector": "healthcare",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Caterpillar wins large equipment order tied to North American data center construction boom",
+		"truth": {
+			"relevance": "high",
+			"sector": "industrials",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Nike cuts full-year sales outlook as weaker demand in China offsets product launch gains",
+		"truth": {
+			"relevance": "high",
+			"sector": "consumer",
+			"urgency": "high",
+			"action": "sell"
+		}
+	},
+	{
+		"headline": "Prologis signs long-term warehouse leases with two major retailers, lifting occupancy guidance",
+		"truth": {
+			"relevance": "medium",
+			"sector": "real_estate",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Freeport-McMoRan reports stronger copper shipments as Indonesian export permits normalize",
+		"truth": {
+			"relevance": "high",
+			"sector": "materials",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "NextEra Energy posts steady quarterly profit as regulated utility demand offsets lower wind resource",
+		"truth": {
+			"relevance": "medium",
+			"sector": "utilities",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "AT&T adds more wireless subscribers than expected, helped by bundled fiber offerings",
+		"truth": {
+			"relevance": "medium",
+			"sector": "telecom",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "US inflation cools for a third straight month, strengthening bets on a Federal Reserve rate cut",
+		"truth": {
+			"relevance": "high",
+			"sector": "macro",
+			"urgency": "high",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Berkshire Hathaway discloses a modest increase in cash holdings with no major portfolio changes",
+		"truth": {
+			"relevance": "low",
+			"sector": "other",
+			"urgency": "low",
+			"action": "ignore"
+		}
+	},
+	{
+		"headline": "Microsoft secures multiyear cloud contract with a European lender, expanding Azure backlog",
+		"truth": {
+			"relevance": "high",
+			"sector": "technology",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Goldman Sachs sets aside more capital for consumer loan losses despite beating profit forecasts",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Chevron warns planned refinery maintenance will trim fuel output in the current quarter",
+		"truth": {
+			"relevance": "medium",
+			"sector": "energy",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Pfizer says late-stage trial meets main goal for experimental treatment in autoimmune disease",
+		"truth": {
+			"relevance": "high",
+			"sector": "healthcare",
+			"urgency": "high",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Honeywell narrows annual profit forecast after aerospace demand offsets slower warehouse automation orders",
+		"truth": {
+			"relevance": "medium",
+			"sector": "industrials",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Target warns holiday-quarter margins may come under pressure as promotions intensify across retail",
+		"truth": {
+			"relevance": "high",
+			"sector": "consumer",
+			"urgency": "high",
+			"action": "sell"
+		}
+	},
+	{
+		"headline": "Simon Property reports stable tenant sales and keeps annual funds-from-operations forecast unchanged",
+		"truth": {
+			"relevance": "medium",
+			"sector": "real_estate",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Alcoa says alumina prices strengthen after supply curbs tighten seaborne market conditions",
+		"truth": {
+			"relevance": "medium",
+			"sector": "materials",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	}
+]

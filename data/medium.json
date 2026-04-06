@@ -1,0 +1,182 @@
+[
+	{
+		"headline": "Nvidia beats quarterly sales forecasts but flags tighter export controls could weigh on China data center demand",
+		"truth": {
+			"relevance": "high",
+			"sector": "technology",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Bank of America posts stronger net interest income while warning higher deposit costs may pressure margins later this year",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Brent crude steadies after OPEC+ extends supply curbs, though refinery maintenance trims near-term product demand",
+		"truth": {
+			"relevance": "medium",
+			"sector": "energy",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Eli Lilly lifts obesity drug output targets as regulators review expanded manufacturing capacity at a key US site",
+		"truth": {
+			"relevance": "high",
+			"sector": "healthcare",
+			"urgency": "high",
+			"action": "buy"
+		}
+	},
+	{
+		"headline": "Boeing says aircraft deliveries improved in March, but supplier bottlenecks keep full-year production ramp uncertain",
+		"truth": {
+			"relevance": "high",
+			"sector": "industrials",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Walmart reports resilient grocery traffic while discretionary categories remain soft amid uneven household spending",
+		"truth": {
+			"relevance": "medium",
+			"sector": "consumer",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US office REITs rebound as Treasury yields ease, yet refinancing costs remain elevated for lower-rated landlords",
+		"truth": {
+			"relevance": "high",
+			"sector": "real_estate",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Rio Tinto warns iron ore shipments may sit at the low end of guidance after cyclone disruptions in Western Australia",
+		"truth": {
+			"relevance": "high",
+			"sector": "materials",
+			"urgency": "medium",
+			"action": "sell"
+		}
+	},
+	{
+		"headline": "Duke Energy secures state approval for grid upgrades, though rate-case timing delays recovery of some capital spending",
+		"truth": {
+			"relevance": "medium",
+			"sector": "utilities",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Verizon raises annual free cash flow outlook but mobile churn edges higher after industry price promotions",
+		"truth": {
+			"relevance": "medium",
+			"sector": "telecom",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "US payroll growth tops expectations as wage gains cool, leaving markets divided on timing of the first Fed rate cut",
+		"truth": {
+			"relevance": "high",
+			"sector": "macro",
+			"urgency": "high",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "SoftBank-backed logistics startup files for US listing at a lower valuation after prior financing round markdowns",
+		"truth": {
+			"relevance": "low",
+			"sector": "other",
+			"urgency": "low",
+			"action": "ignore"
+		}
+	},
+	{
+		"headline": "Amazon cloud unit signs multiyear AI infrastructure deal with a European telecom, but contract margins are below legacy average",
+		"truth": {
+			"relevance": "high",
+			"sector": "technology",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Citigroup plans additional buybacks after stress-test results, while management keeps a cautious tone on commercial real estate losses",
+		"truth": {
+			"relevance": "high",
+			"sector": "finance",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "European gas prices retreat on mild weather forecasts, but storage injection rates lag seasonal norms",
+		"truth": {
+			"relevance": "medium",
+			"sector": "energy",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Merck receives priority review for new oncology indication as competing trial data raises pricing pressure concerns",
+		"truth": {
+			"relevance": "high",
+			"sector": "healthcare",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Siemens reports robust automation backlog but says slower order intake in China could cap second-half growth",
+		"truth": {
+			"relevance": "medium",
+			"sector": "industrials",
+			"urgency": "medium",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Starbucks warns of weaker same-store sales in North America as value-focused promotions dilute average ticket growth",
+		"truth": {
+			"relevance": "high",
+			"sector": "consumer",
+			"urgency": "high",
+			"action": "sell"
+		}
+	},
+	{
+		"headline": "US homebuilder sentiment improves on lower mortgage rates, though labor shortages continue to delay project completions",
+		"truth": {
+			"relevance": "medium",
+			"sector": "real_estate",
+			"urgency": "low",
+			"action": "hold"
+		}
+	},
+	{
+		"headline": "Copper prices hit a nine-month high on tight concentrate supply even as downstream demand indicators remain mixed",
+		"truth": {
+			"relevance": "high",
+			"sector": "materials",
+			"urgency": "medium",
+			"action": "buy"
+		}
+	}
+]

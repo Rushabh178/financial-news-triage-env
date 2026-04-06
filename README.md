@@ -1,3 +1,13 @@
+---
+title: Financial News Triage Env
+emoji: 🚀
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # Financial News Triage OpenEnv
 
 This project implements a deterministic OpenEnv environment for financial headline triage.

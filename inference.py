@@ -14,7 +14,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 # Client initialized for OpenEnv spec compliance; baseline remains deterministic.
 client = OpenAI(
     base_url=API_BASE_URL,
-    api_key=HF_TOKEN or "dummy"
+    api_key=HF_TOKEN
 )
 
 

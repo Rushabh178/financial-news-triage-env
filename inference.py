@@ -6,18 +6,16 @@ from env.environment import FinancialNewsEnvironment
 from env.models import Action
 
 
-# Reserved for future OpenAI / HF router integration
-API_BASE_URL = os.getenv("API_BASE_URL")
-MODEL_NAME = os.getenv("MODEL_NAME")
-HF_TOKEN = os.getenv("HF_TOKEN")
+# Required by OpenEnv validator: must route all calls through the injected proxy.
+API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
+MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-72B-Instruct")
+API_KEY = os.getenv("HF_TOKEN") or os.getenv("API_KEY")
 
 # Client initialized for OpenEnv spec compliance; baseline remains deterministic.
-client = None
-if API_BASE_URL and HF_TOKEN:
-    client = OpenAI(
-        base_url=API_BASE_URL,
-        api_key=HF_TOKEN
-    )
+client = OpenAI(
+    base_url=API_BASE_URL,
+    api_key=API_KEY
+)
 
 
 def run() -> None:
@@ -28,6 +26,12 @@ def run() -> None:
         sector="macro",
         urgency="high",
         action="buy",
+    )
+
+    client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": "Reply with one word: ready"}],
+        max_tokens=2,
     )
 
     env = FinancialNewsEnvironment()
@@ -50,9 +54,10 @@ def run() -> None:
             break
 
     total_score = sum(rewards)
-    success = "true" if total_score > 0 else "false"
+    score = min(max(total_score / MAX_STEPS, 0.0), 1.0)
+    success = "true" if score > 0 else "false"
     rewards_str = ",".join(f"{r:.2f}" for r in rewards)
-    print(f"[END] success={success} steps={steps_taken} rewards={rewards_str}")
+    print(f"[END] success={success} steps={steps_taken} score={score:.2f} rewards={rewards_str}")
 
 
 if __name__ == "__main__":

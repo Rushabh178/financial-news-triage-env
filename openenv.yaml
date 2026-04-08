@@ -9,19 +9,16 @@ tasks:
     difficulty: easy
     description: Classify straightforward market headlines into relevance, sector, urgency, and action.
     max_steps: 8
-    grader: graders.grader_easy:EasyTriageGrader
   - id: triage_medium
     name: Medium Financial Triage
     difficulty: medium
     description: Classify nuanced headlines with mixed or partially offsetting financial signals.
     max_steps: 8
-    grader: graders.grader_medium:MediumTriageGrader
   - id: triage_hard
     name: Hard Financial Triage
     difficulty: hard
     description: Classify complex macro and multi-factor headlines where signals can conflict.
     max_steps: 8
-    grader: graders.grader_hard:HardTriageGrader
 
 metadata:
   domain: finance

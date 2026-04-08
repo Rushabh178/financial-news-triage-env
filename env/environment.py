@@ -16,9 +16,26 @@ class FinancialNewsEnvironment:
         self._index = 0
         self._score = 0.0
         self._done = False
+        self._current_task_id: str | None = None
 
-    def reset(self) -> Observation:
-        """Reset environment and return the initial observation."""
+    def reset(self, task_id: str | None = None) -> Observation:
+        """Reset environment and return the initial observation.
+        
+        Args:
+            task_id: Optional task identifier (triage_easy, triage_medium, triage_hard).
+                     If provided, overrides the default difficulty.
+        """
+        # Map task_id to difficulty if provided
+        if task_id:
+            task_to_difficulty = {
+                "triage_easy": "easy",
+                "triage_medium": "medium",
+                "triage_hard": "hard",
+            }
+            if task_id in task_to_difficulty:
+                self.difficulty = task_to_difficulty[task_id]
+            self._current_task_id = task_id
+        
         self._records = load_difficulty_data(self.difficulty)
         self._index = 0
         self._score = 0.0

@@ -1,6 +1,6 @@
 from typing import Optional
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from pydantic import BaseModel
 
 from env import Action, FinancialNewsEnvironment, Observation, Reward, State
@@ -13,6 +13,13 @@ ENV = FinancialNewsEnvironment()
 class ResetRequest(BaseModel):
     """Reset request payload with optional task_id."""
     task_id: Optional[str] = None
+
+
+class GraderRequest(BaseModel):
+    """Grader invocation request."""
+    task_id: str
+    action: dict
+    truth: dict
 
 
 @app.get("/")
@@ -42,3 +49,54 @@ def state() -> State:
     except RuntimeError:
         ENV.reset()
         return ENV.state()
+
+
+@app.get("/tasks")
+def get_tasks():
+    """List available tasks with their grader information."""
+    return {
+        "tasks": [
+            {
+                "id": "triage_easy",
+                "name": "Easy Financial Triage",
+                "difficulty": "easy",
+                "grader": "graders.grader_easy:EasyTriageGrader",
+                "max_steps": 8,
+            },
+            {
+                "id": "triage_medium",
+                "name": "Medium Financial Triage",
+                "difficulty": "medium",
+                "grader": "graders.grader_medium:MediumTriageGrader",
+                "max_steps": 8,
+            },
+            {
+                "id": "triage_hard",
+                "name": "Hard Financial Triage",
+                "difficulty": "hard",
+                "grader": "graders.grader_hard:HardTriageGrader",
+                "max_steps": 8,
+            },
+        ]
+    }
+
+
+@app.post("/grader")
+def invoke_grader(request: GraderRequest):
+    """Invoke grader for a specific task."""
+    from graders import EasyTriageGrader, MediumTriageGrader, HardTriageGrader
+    
+    graders_map = {
+        "triage_easy": EasyTriageGrader,
+        "triage_medium": MediumTriageGrader,
+        "triage_hard": HardTriageGrader,
+    }
+    
+    if request.task_id not in graders_map:
+        return {"error": f"Unknown task: {request.task_id}"}
+    
+    # Convert dict to Action
+    action_obj = Action(**request.action)
+    grader_class = graders_map[request.task_id]
+    reward = grader_class.grade(action_obj, request.truth)
+    return {"reward": reward, "task_id": request.task_id}
